@@ -1,5 +1,5 @@
 name: Try to Create OCI VM
-# It will run every 5 minutes.
+# It will run every 10 minutes.
 on:
   schedule:
     - cron: "*/10 * * * *"
