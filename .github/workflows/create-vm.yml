@@ -65,6 +65,10 @@ jobs:
             --display-name "coolify-vm" \
             --boot-volume-size-in-gbs 200 2>&1 || true)
 
+          echo "--- OCI Response ---"
+          echo "$OCI_OUTPUT"
+          echo "--------------------"
+
           echo "log_data<<EOF" >> $GITHUB_OUTPUT
           echo "$OCI_OUTPUT" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
